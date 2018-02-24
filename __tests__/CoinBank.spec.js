@@ -32,4 +32,16 @@ describe("testing for CoinBank class", () => {
       expect(CoinBank1.statement.twoonie.quantity).toBe(15);
     });
   });
+  describe("test resupplying changes for a specific type of coin", () => {
+    test("should return 15", () => {
+      const CoinBank1 = new CoinBank({
+        twoonie: 10,
+        loonie: 10,
+        nickel: 10,
+        dime: 10
+      });
+      CoinBank1.resupplyChangeForOne({ type: "twoonie", quantity: 5 });
+      expect(CoinBank1.statement.twoonie.quantity).toBe(15);
+    });
+  });
 });
