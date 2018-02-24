@@ -4,6 +4,8 @@ module.exports = {
     jest: true
   },
   rules: {
-    quotes: ["error", "double"]
+    quotes: ["error", "double"],
+    "comma-dangle": ["error", "never"],
+    "arrow-parens": ["error", "as-needed"],
   }
 };

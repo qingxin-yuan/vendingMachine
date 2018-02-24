@@ -13,6 +13,7 @@ describe("testing for CoinBank class", () => {
       const CoinBank1 = new CoinBank({
         twoonie: 10,
         loonie: 10,
+        quarter: 10,
         nickel: 10,
         dime: 10
       });
@@ -25,6 +26,7 @@ describe("testing for CoinBank class", () => {
       const CoinBank1 = new CoinBank({
         twoonie: 10,
         loonie: 10,
+        quarter: 10,
         nickel: 10,
         dime: 10
       });
@@ -37,11 +39,29 @@ describe("testing for CoinBank class", () => {
       const CoinBank1 = new CoinBank({
         twoonie: 10,
         loonie: 10,
+        quarter: 10,
         nickel: 10,
         dime: 10
       });
       CoinBank1.resupplyChangeForOne({ type: "twoonie", quantity: 5 });
       expect(CoinBank1.statement.twoonie.quantity).toBe(15);
+    });
+  });
+  describe("test for getting changes for payment", () => {
+    test("should return an object with corresponding amount of changes", () => {
+      const CoinBank1 = new CoinBank({
+        twoonie: 10,
+        loonie: 10,
+        quarter: 10,
+        nickel: 10,
+        dime: 10
+      });
+
+      // console.log(CoinBank1.getChange(5, 3.5));
+      expect(CoinBank1.getChange(5, 3.5)).toEqual({
+        loonie: 1,
+        quarter: 2
+      });
     });
   });
 });
