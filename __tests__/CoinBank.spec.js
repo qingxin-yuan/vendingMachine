@@ -57,7 +57,6 @@ describe("testing for CoinBank class", () => {
         dime: 10
       });
 
-      // console.log(CoinBank1.getChange(5, 3.5));
       expect(CoinBank1.getChange(5, 3.5)).toEqual({
         loonie: 1,
         quarter: 2
