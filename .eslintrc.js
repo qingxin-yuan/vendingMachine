@@ -8,6 +8,7 @@ module.exports = {
     "comma-dangle": ["error", "never"],
     "arrow-parens": ["error", "as-needed"],
     "object-curly-newline": ["error", { "multiline": true }],
-    "no-param-reassign": ["error", { "props": false }]
+    "no-param-reassign": ["error", { "props": false }],
+    "no-unused-vars":["error", { "varsIgnorePattern": "[iI]gnored" }]
   }
 };

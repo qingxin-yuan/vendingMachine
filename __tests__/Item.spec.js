@@ -4,7 +4,7 @@ describe("testing for Item class", () => {
   describe("input validation", () => {
     test("should throw error", () => {
       expect(() => {
-        const item1 = new Item([], [], []);
+        const itemIgnored = new Item([], [], []);
       }).toThrow();
     });
   });

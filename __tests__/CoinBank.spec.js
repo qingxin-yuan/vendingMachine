@@ -4,7 +4,7 @@ describe("testing for CoinBank class", () => {
   describe("input validation", () => {
     test("should throw error", () => {
       expect(() => {
-        const CoinBank1 = new CoinBank();
+        const CoinBankIgnored = new CoinBank();
       }).toThrow();
     });
   });
