@@ -2,9 +2,9 @@
 A class-based Vending Machine written in JavaScript, using Jest for testing.
 
 ## SetUp
-1. Install dev dependencies 
+1. Install dev dependencies  
 `npm install`
-2. Install Jest
+2. Install Jest  
 `npm install --save-dev jest`
 
 ## What I Learned / Proud of
