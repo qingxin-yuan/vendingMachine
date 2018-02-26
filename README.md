@@ -13,4 +13,4 @@ A class-based Vending Machine written in JavaScript, using Jest for testing.
 3. Reinforce knowledge of Jest as testing tool
 
 ## Screenshot
-![Alt Text] (/test-result.png?raw=true "test results screenshot")
+![Alt Text](/test-result.png?raw=true "test results screenshot")
